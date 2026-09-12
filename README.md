@@ -1,24 +1,39 @@
 ```markdown
-<div align="center">
+# 🧠 Deep Neural Network from Scratch
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Deep%20Neural%20Network&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=From%20Scratch%20with%20NumPy&descAlignY=58&descSize=20" width="100%"/>
+### A complete, transparent, and extensible implementation of a deep neural network — built entirely from scratch with pure NumPy.
 
-**A complete, transparent, and extensible implementation of a deep neural network — built entirely from scratch with pure NumPy.**
+**No TensorFlow. No PyTorch. No Keras. Just math, code, and a deep understanding of how neural networks really work.**
 
-*No TensorFlow. No PyTorch. No Keras. Just math, code, and a deep understanding of how neural networks really work.*
+---
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![NumPy](https://img.shields.io/badge/NumPy-1.21%2B-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
-[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.4%2B-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org/)
-[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0%2B-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
+![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-1.21%2B-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3.4%2B-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0%2B-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
-[![Tests](https://img.shields.io/badge/Tests-35%20passed-2ea44f?style=for-the-badge&logo=pytest&logoColor=white)](https://github.com/NotNot696/deep-neural-network-from-scratch)
-[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Stars](https://img.shields.io/github/stars/NotNot696/deep-neural-network-from-scratch?style=for-the-badge&color=ffd700)](https://github.com/NotNot696/deep-neural-network-from-scratch/stargazers)
+![Tests](https://img.shields.io/badge/Tests-35%20passed-2ea44f?style=for-the-badge&logo=pytest&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+![Stars](https://img.shields.io/github/stars/NotNot696/deep-neural-network-from-scratch?style=for-the-badge&color=ffd700)
 
-[**📖 Documentation**](#-introduction) · [**🚀 Quick Start**](#-installation) · [**📊 Results**](#-results) · [**🧪 Tests**](#-testing)
+---
 
-</div>
+## 📑 Table of Contents
+
+- [Introduction](#-introduction)
+- [Key Features](#-key-features)
+- [Results](#-results)
+- [Project Structure](#-project-structure)
+- [Installation](#️-installation)
+- [Usage](#-usage)
+- [Advanced Techniques](#️-advanced-techniques)
+- [Testing](#-testing)
+- [Outputs & Visualizations](#-outputs--visualizations)
+- [Roadmap](#️-roadmap)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Author](#-author)
+- [Acknowledgements](#-acknowledgements)
 
 ---
 
@@ -30,7 +45,7 @@ This project is a **complete, ground-up implementation of a deep neural network*
 
 The goal is simple: **understand deep learning by building it.** Whether you're a student learning the fundamentals, a researcher validating an idea, or a practitioner who wants to peek under the hood, this project is designed to be **transparent, modular, and ready to extend**.
 
-### 🎯 What makes this project special?
+### 🎯 What Makes This Project Special?
 
 - 🧩 **Every component is modular** — swap optimizers, activations, or schedulers with a single line.
 - 🔬 **Fully testable** — 35 unit tests cover every critical path.
@@ -42,21 +57,14 @@ The goal is simple: **understand deep learning by building it.** Whether you're 
 
 ## ✨ Key Features
 
-<table>
-<tr>
-<td valign="top" width="50%">
-
 ### 🧠 Core Components
 
 | Component | Implementations |
 |:---|:---|
 | **Activation Functions** | ReLU, Sigmoid, Tanh, Softmax, ELU, SELU |
 | **Weight Initializers** | He (Kaiming), Xavier (Glorot), LeCun, Zero |
-| **Layers** | Dense, Dropout, BatchNormalization |
+| **Layers** | Dense (Fully Connected), Dropout, Batch Normalization |
 | **Optimizers** | SGD, Momentum, Nesterov, AdaGrad, RMSProp, Adam |
-
-</td>
-<td valign="top" width="50%">
 
 ### ⚙️ Training Utilities
 
@@ -67,64 +75,20 @@ The goal is simple: **understand deep learning by building it.** Whether you're 
 | **Callbacks** | EarlyStopping, ModelCheckpoint |
 | **Logging** | ExperimentLogger (JSON) |
 
-</td>
-</tr>
-</table>
-
 ---
 
 ## 📊 Results
 
-The network was trained and evaluated on four datasets spanning from toy problems to real-world image classification:
+The network was trained and evaluated on four datasets — from toy problems to real-world image classification.
 
-<table align="center">
-<thead>
-<tr>
-<th>Dataset</th>
-<th>Task</th>
-<th align="center">Test Accuracy</th>
-<th align="center">Test Loss</th>
-<th align="center">Best Epoch</th>
-<th align="center">Early Stopped</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">🔷 <b>XOR</b></td>
-<td align="center">Binary classification</td>
-<td align="center"><b>100.00%</b></td>
-<td align="center">0.0007</td>
-<td align="center">—</td>
-<td align="center">—</td>
-</tr>
-<tr>
-<td align="center">🌸 <b>Iris</b></td>
-<td align="center">3-class classification</td>
-<td align="center"><b>96.67%</b></td>
-<td align="center">0.0394</td>
-<td align="center">25</td>
-<td align="center">✅</td>
-</tr>
-<tr>
-<td align="center">🔢 <b>MNIST</b></td>
-<td align="center">10-class digits</td>
-<td align="center"><b>96.79%</b></td>
-<td align="center">0.0177</td>
-<td align="center">86</td>
-<td align="center">❌</td>
-</tr>
-<tr>
-<td align="center">👕 <b>Fashion-MNIST</b></td>
-<td align="center">10-class clothing</td>
-<td align="center"><b>86.81%</b></td>
-<td align="center">0.0444</td>
-<td align="center">51</td>
-<td align="center">✅</td>
-</tr>
-</tbody>
-</table>
+| Dataset | Task | Test Accuracy | Test Loss | Best Epoch | Early Stopped |
+|:---|:---|:---:|:---:|:---:|:---:|
+| 🔷 **XOR** | Binary classification | **100.00%** | 0.0007 | — | — |
+| 🌸 **Iris** | 3-class classification | **96.67%** | 0.0394 | 25 | ✅ |
+| 🔢 **MNIST** | 10-class digits | **96.79%** | 0.0177 | 86 | ❌ |
+| 👕 **Fashion-MNIST** | 10-class clothing | **86.81%** | 0.0444 | 51 | ✅ |
 
-> 💡 **Note:** All results were achieved using advanced techniques such as **EarlyStopping**, **ModelCheckpoint**, **1Cycle / ReduceOnPlateau scheduling**, **Batch Normalization**, and **Dropout** — implemented entirely from scratch.
+> 💡 **Note:** All results were achieved using advanced techniques — EarlyStopping, ModelCheckpoint, 1Cycle / ReduceOnPlateau scheduling, Batch Normalization, and Dropout — implemented entirely from scratch.
 
 ---
 
@@ -133,33 +97,33 @@ The network was trained and evaluated on four datasets spanning from toy problem
 ```
 deep-neural-network-from-scratch/
 │
-├── 📂 src/                       # Core library
-│   ├── 🧠 activations.py         # 6 activation functions
-│   ├── 🎲 initializers.py        # 4 weight initialization strategies
-│   ├── 🧱 layers.py              # Dense, Dropout, BatchNormalization
-│   ├── 🏗️  model.py              # NeuralNetwork class
-│   ├── ⚡ optimizers.py          # 6 gradient-based optimizers
-│   ├── 🛡️  regularizers.py       # L1, L2, Elastic Net
-│   ├── 📉 schedulers.py          # 5 learning rate schedulers
-│   ├── 🔧 utils.py               # Losses, metrics, callbacks, logger
-│   └── 📥 data_loader.py         # Iris, MNIST, Fashion-MNIST
+├── src/                       # Core library
+│   ├── activations.py         # 6 activation functions
+│   ├── initializers.py        # 4 weight initialization strategies
+│   ├── layers.py              # Dense, Dropout, BatchNormalization
+│   ├── model.py               # NeuralNetwork class
+│   ├── optimizers.py          # 6 gradient-based optimizers
+│   ├── regularizers.py        # L1, L2, Elastic Net
+│   ├── schedulers.py          # 5 learning rate schedulers
+│   ├── utils.py               # Losses, metrics, callbacks, logger
+│   └── data_loader.py         # Iris, MNIST, Fashion-MNIST
 │
-├── 📂 examples/                  # Ready-to-run scripts
+├── examples/                  # Ready-to-run scripts
 │   ├── xor_example.py
 │   ├── iris_example.py
 │   ├── mnist_example.py
 │   └── fashion_mnist_example.py
 │
-├── 📂 tests/                     # 35 unit tests
-│   ├── test_activation.py        # 9 tests
-│   ├── test_layers.py            # 11 tests
-│   ├── test_model.py             # 8 tests
-│   └── test_optimizer.py         # 7 tests
+├── tests/                     # 35 unit tests
+│   ├── test_activation.py     # 9 tests
+│   ├── test_layers.py         # 11 tests
+│   ├── test_model.py          # 8 tests
+│   └── test_optimizer.py      # 7 tests
 │
-├── 📂 outputs/                   # Generated artifacts
-│   ├── models/                   # Saved weights (.npz)
-│   ├── logs/                     # Experiment logs (.json)
-│   └── plots/                    # Training plots (.png)
+├── outputs/                   # Generated artifacts
+│   ├── models/                # Saved weights (.npz)
+│   ├── logs/                  # Experiment logs (.json)
+│   └── plots/                 # Training plots (.png)
 │
 ├── README.md
 ├── requirements.txt
@@ -175,7 +139,7 @@ deep-neural-network-from-scratch/
 - Python **3.8+**
 - pip (or conda)
 
-### Step-by-step
+### Step-by-Step
 
 ```bash
 # 1. Clone the repository
@@ -194,7 +158,7 @@ pip install -r requirements.txt
 
 ## 🚀 Usage
 
-### Run the examples
+### Run the Examples
 
 Each example is fully self-contained and showcases different aspects of the library:
 
@@ -212,11 +176,10 @@ python examples/mnist_example.py
 python examples/fashion_mnist_example.py
 ```
 
-### Build your own model
+### Build Your Own Model
 
 ```python
 from src.model import NeuralNetwork
-from src.utils import one_hot_encode
 
 # 1. Create the model
 model = NeuralNetwork(
@@ -255,46 +218,41 @@ print(f"Test Accuracy: {acc:.2%}")
 
 ## ⚙️ Advanced Techniques
 
-This project doesn't stop at the basics. Every modern training technique you'd expect from a production framework is implemented from scratch:
-
-<table>
-<tr>
-<td valign="top" width="50%">
+This project goes beyond the basics. Every modern training technique you'd expect from a production framework is implemented from scratch.
 
 ### 🎯 Training Callbacks
-- **EarlyStopping** — halts training when validation loss plateaus
-- **ModelCheckpoint** — saves the best model during training
-- **ExperimentLogger** — records every hyperparameter and result to JSON
 
-</td>
-<td valign="top" width="50%">
+| Callback | Description |
+|:---|:---|
+| **EarlyStopping** | Halts training when validation loss plateaus |
+| **ModelCheckpoint** | Saves the best model during training |
+| **ExperimentLogger** | Records every hyperparameter and result to JSON |
 
 ### 📉 Learning Rate Control
-- **1Cycle** — warm-up followed by cool-down
-- **ReduceOnPlateau** — reduces LR when loss stalls
-- **Power / Exponential / Piecewise** — classic decay strategies
 
-</td>
-</tr>
-<tr>
-<td valign="top" width="50%">
+| Scheduler | Strategy |
+|:---|:---|
+| **1Cycle** | Warm-up followed by cool-down |
+| **ReduceOnPlateau** | Reduces LR when loss stalls |
+| **Power** | Gradual polynomial decay |
+| **Exponential** | Fast exponential decay |
+| **Piecewise** | Step-wise constant decay |
 
 ### 🧱 Network Regularization
-- **Batch Normalization** — stabilizes & accelerates training
-- **Dropout** — prevents overfitting
-- **L1 / L2 / Elastic Net** — penalizes large weights
 
-</td>
-<td valign="top" width="50%">
+| Technique | Purpose |
+|:---|:---|
+| **Batch Normalization** | Stabilizes and accelerates training |
+| **Dropout** | Prevents overfitting |
+| **L1 / L2 / Elastic Net** | Penalizes large weights |
 
 ### 🎲 Smart Initialization
-- **He (Kaiming)** — optimal for ReLU networks
-- **Xavier (Glorot)** — optimal for Tanh / Sigmoid
-- **LeCun** — optimal for SELU
 
-</td>
-</tr>
-</table>
+| Initializer | Best For |
+|:---|:---|
+| **He (Kaiming)** | ReLU networks |
+| **Xavier (Glorot)** | Tanh / Sigmoid networks |
+| **LeCun** | SELU networks |
 
 ---
 
@@ -306,7 +264,7 @@ The project is covered by **35 comprehensive unit tests** — ensuring every com
 python -m pytest tests/ -v
 ```
 
-Expected output:
+**Expected Output:**
 
 ```
 ========================================================== test session starts ===========================================================
@@ -334,48 +292,37 @@ tests/test_optimizer.py .......                            [100%]
 
 ## 📈 Outputs & Visualizations
 
-Every experiment produces artifacts that make it easy to track, reproduce, and compare results:
+Every experiment produces artifacts that make it easy to track, reproduce, and compare results.
 
 ```
 outputs/
-├── 📊 plots/          # Loss curves, accuracy curves, weight histograms
-├── 💾 models/         # Best model weights (compressed .npz format)
-└── 📝 logs/           # Full experiment configuration and results (JSON)
+├── plots/             # Loss curves, accuracy curves, weight histograms
+├── models/            # Best model weights (compressed .npz format)
+└── logs/              # Full experiment configuration and results (JSON)
 ```
 
-### Sample Outputs
+### What You Get
 
-<details>
-<summary><b>📉 Training Progress (Loss & Accuracy)</b></summary>
+- 📉 **Training Progress** — loss and accuracy curves, automatically generated
+- 💾 **Best Model Checkpoint** — the model with lowest validation loss, saved as `.npz`
+- 📝 **Experiment Log** — full config, results, and history, saved as `.json`
 
-> Automatically generated for every experiment — includes training loss, validation loss, training accuracy, and validation accuracy.
+**Load the best model back with a single call:**
 
-</details>
+```python
+model.load_weights("outputs/models/mnist_best.npz")
+```
 
-<details>
-<summary><b>💾 Best Model Checkpoint (.npz)</b></summary>
+**Sample experiment log:**
 
-> The best model — chosen by lowest validation loss — is saved automatically. Load it back with a single call:
-> ```python
-> model.load_weights("outputs/models/mnist_best.npz")
-> ```
-
-</details>
-
-<details>
-<summary><b>📝 Experiment Log (.json)</b></summary>
-
-> Each experiment is fully logged, including config, results, and history:
-> ```json
-> {
->   "experiment_name": "mnist_advanced",
->   "config": { "learning_rate": 0.01, "epochs": 100, ... },
->   "results": { "test_accuracy": 0.9679, "test_loss": 0.017746 },
->   "history": { "loss": [...], "accuracy": [...] }
-> }
-> ```
-
-</details>
+```json
+{
+  "experiment_name": "mnist_advanced",
+  "config": { "learning_rate": 0.01, "epochs": 100 },
+  "results": { "test_accuracy": 0.9679, "test_loss": 0.017746 },
+  "history": { "loss": [], "accuracy": [] }
+}
+```
 
 ---
 
@@ -419,13 +366,9 @@ This project is licensed under the **MIT License**
 
 ## 👤 Author
 
-<div align="center">
-
 **Amir Arsalan Farahmand**
 
-[![GitHub](https://img.shields.io/badge/GitHub-NotNot696-181717?style=for-the-badge&logo=github)](https://github.com/NotNot696)
-
-</div>
+- GitHub: [@NotNot696](https://github.com/NotNot696)
 
 ---
 
@@ -444,15 +387,9 @@ And of course, to the **open-source community** — for making deep learning acc
 
 ---
 
-<div align="center">
-
-### ⭐ If this project helped you, please consider giving it a star! ⭐
+### ⭐ If this project helped you, please consider giving it a star!
 
 *It means the world and helps others discover the project.*
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&animation=fadeIn" width="100%"/>
-
 **Built with ❤️ and pure NumPy**
-
-</div>
 ```
